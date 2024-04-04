@@ -18,7 +18,7 @@ Desarrolle la mayoría de ejercicios en clase. Para cada punto cree un programa 
 
 <br>
 
-### 2.
+### 2.Imprimir un listado con los números impares desde 1 hasta 999 y seguidamente otro listado con los números pares desde 2 hasta 1000.
 
 ```
 
@@ -29,7 +29,7 @@ Desarrolle la mayoría de ejercicios en clase. Para cada punto cree un programa 
 <br>
 
 
-### 3.
+### 3.Imprimir los números pares en forma descendente hasta 2 que son menores o iguales a un número natural n ≥ 2 dado.
 
 <br>
 
@@ -41,7 +41,7 @@ Desarrolle la mayoría de ejercicios en clase. Para cada punto cree un programa 
  
 <br>
 
-### 4.
+### 4.Imprimir los números de 1 hasta un número natural n dado, cada uno con su respectivo factorial.
 
 <br>
 
@@ -54,7 +54,7 @@ Desarrolle la mayoría de ejercicios en clase. Para cada punto cree un programa 
 
 <br>
 
-### 5.
+### 5.Calcular el valor de 2 elevado a la potencia n usando ciclos for.
 
 <br>
 
@@ -67,7 +67,7 @@ Desarrolle la mayoría de ejercicios en clase. Para cada punto cree un programa 
 
 <br>
 
-### 6.
+### 6.Leer un número natural n, leer otro dato de tipo real x y calcular x^n usando ciclos for. Disclaimer: Trate de no utilizar el operador de potencia (**).
 
 <br>
 
@@ -81,7 +81,7 @@ Desarrolle la mayoría de ejercicios en clase. Para cada punto cree un programa 
 
 <br>
 
-### 7.
+### 7.Diseñe un programa que muestre las tablas de multiplicar del 1 al 9.
 <br>
 
 ```
@@ -92,45 +92,17 @@ Desarrolle la mayoría de ejercicios en clase. Para cada punto cree un programa 
 
 <br>
 
-### 8.
+### 8.Diseñar una función que permita calcular una aproximación de la función exponencial alrededor de 0 para cualquier valor x (real), utilizando los primeros n términos de la serie de Maclaurin. Nota: use math para traer la función exponencial y mostrar la diferencia entre el valor real y la aproximación.
+
 <br>
 
 ```
-def es_primo(numero):
-    if numero <= 1:
-        return False
-    for i in range(2, int(numero ** 0.5) + 1):
-        if numero % i == 0:
-            return False
-    return True
-
-def numeros_primos_hasta_100():
-    print("Números primos del 1 al 100:")
-    for i in range(1, 101):
-        if es_primo(i):
-            print(i, end=" ")
-
-numeros_primos_hasta_100()
 
 ```
 
 <br>
 
-Este código consta de dos funciones:
 
-1. La función es_primo(numero) verifica si un número dado es primo. Comienza verificando si el número es menor o igual a 1, en cuyo caso no es primo. Luego, itera desde 2 hasta la raíz cuadrada del número, verificando si el número es divisible por algún número en ese rango. Si es divisible por algún número, no es primo. Si no es divisible por ninguno, es primo.
-
-2. La función numeros_primos_hasta_100() imprime todos los números primos del 1 al 100 utilizando la función es_primo(numero).
-
-El resultado será la impresión de todos los números primos del 1 al 100.
-
- COMO SE HIZO
-
--  Función para verificar si un número es primo (es_primo(numero)): Esta función determina si un número dado es primo o no. Itera sobre los números desde 2 hasta la raíz cuadrada del número y verifica si es divisible por alguno de ellos. Si no es divisible por ninguno, es primo.
-
-- Función para encontrar los números primos del 1 al 100 (numeros_primos_hasta_100()): Utiliza la función anterior para imprimir todos los números primos del 1 al 100.
-
-- Llamada a la función principal: Se llama a la función principal para ejecutar el programa y mostrar los números primos del 1 al 100.
 
 
 
